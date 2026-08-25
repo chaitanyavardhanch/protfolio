@@ -3224,6 +3224,14 @@ body {
     text-align: center;
 }
 
+.project-btn {
+    gap: 8px;
+}
+
+.project-btn i {
+    flex-shrink: 0;
+}
+
 .project-card,
 .experience-content,
 .contact-simple {
@@ -3249,6 +3257,41 @@ body.dark-mode .nav-links a {
 body.dark-mode .theme-toggle,
 body.dark-mode .menu-toggle {
     color: #f8fafc;
+}
+
+.project-btn.disabled-project-btn {
+    background: #e8f2ff;
+    color: #3178c6;
+    border: 1px solid #bfd8f7;
+    opacity: 1;
+    font-weight: 600;
+    cursor: default;
+    pointer-events: none;
+    transform: none;
+    user-select: none;
+}
+
+.project-btn.disabled-project-btn:hover {
+    background: #e8f2ff;
+    color: #3178c6;
+    border-color: #bfd8f7;
+    transform: none;
+}
+
+.project-btn.disabled-project-btn i {
+    color: inherit;
+}
+
+.project-btn.disabled-project-btn::before {
+    display: none;
+}
+
+body.dark-mode .project-btn.disabled-project-btn,
+body.dark-mode .project-btn.disabled-project-btn:hover {
+    background: #1e293b;
+    color: #7db7f3;
+    border-color: #365b85;
+    opacity: 1;
 }
 
 @media (max-width: 1024px) {
