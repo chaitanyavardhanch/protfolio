@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chaitanyavardhanch.github.io/protfolio/sitemap.xml
